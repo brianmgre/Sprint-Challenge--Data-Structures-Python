@@ -5,6 +5,8 @@ class BinarySearchTree:
         self.right = None
 
     def depth_first_for_each(self, cb):
+      # iterative solution
+
         # stack = [self]
 
         # while len(stack):
@@ -28,6 +30,8 @@ class BinarySearchTree:
             self.right.depth_first_for_each(cb)
 
     def breadth_first_for_each(self, cb):
+
+      # iterative solution
         queue = [self]
 
         while len(queue):
